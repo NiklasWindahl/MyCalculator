@@ -5,6 +5,7 @@ public class MyCalculator {
   private double num1;
   private double num2;
   private double answer;
+
   private String operation = "-1";
 
   Scanner op = new Scanner (System.in);
@@ -12,6 +13,7 @@ public class MyCalculator {
   Scanner scan = new Scanner(System.in);
 
       private  void printInstructions(){
+
 
       System.out.println("Hello, welcome to MasterGitCalculator");
       System.out.println("please choose number, operator, number");
