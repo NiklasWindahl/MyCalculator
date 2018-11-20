@@ -2,43 +2,44 @@ import java.util.Scanner;
 
 public class MyCalculator {
 
+  private static double firstNumber = 0;
+  private static double secondNumber = 0;
+  private static double answer = 0;
+  private static String operation = "-1";
+
+private static void add(double num1, double num2){
+  
+}
+private static void sub(double num1, double num2){
+
+}
+private static void mult(double num1, double num2){
+
+}
+private static void div(double num1, double num2){
+
+}
+private static void enterDouble(){
+
+}
+private static void enterOperator(){
+
+}
+private static void enterDoubleAgain(){
+
+}
+private static void printResult(){
+
+}
+private static void printInstructions(){
+
+}
+
+
   public static void main(String[] args) {
 
-    private static double num1 = 0;
-    private static double num2 = 0;
-    private static double answer = 0;
-    private static String operator = "-1";
-
-    Scanner input = new Scanner(System.in);
-
-    System.out.print("Enter first number: ");
-    num1 = input.nextDouble();
-
-    System.out.print("Enter second number: ");
-    num2 = input.nextDouble();
-
-    Scanner op = new Scanner(System.in);
-
-    System.out.print("Välj: +  -  *  / ");
-    operation = op.next();
 
 
-    if (operation.equals("+"))
-       {
-           System.out.println("Your Answer is "+(num1 + num2));
-       }
-       else if (operation.equals("-"))
-       {
-           System.out.println("Your Answer is "+(num1 - num2));
-       }
-       else if (operation.equals("*"))
-       {
-           System.out.println("Your Answer is "+(num1 * num2));
-       }
-       else if (operation.equals("/"))
-       {
-           System.out.println("Your Answer is "+(num1 / num2));
-       }
 
 
   }
