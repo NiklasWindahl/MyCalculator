@@ -2,36 +2,36 @@ import java.util.Scanner;
 
 public class MyCalculator {
 
-  private static double num1 = 0;
-  private static double num2 = 0;
-  private static double answer = 0;
-  private static String operation = "-1";
+  private double num1;
+  private double num2;
+  private double answer;
+  private String operation;
 
   Scanner scan = new Scanner(System.in);
 
-    private static void add(double num1, double num2){
+    private void add(double num1, double num2){
       answer = num1 + num2;
     }
-    private static void sub(double num1, double num2){
+    private void sub(double num1, double num2){
       answer = num1 - num2;
     }
-    private static void mult(double num1, double num2){
+    private void mult(double num1, double num2){
       answer = num1 * num2;
     }
-    private static void div(double num1, double num2){
+    private void div(double num1, double num2){
       answer = num1 / num2;
     }
-    private static void enterDouble(){
+    private void enterDouble(){
       num1 = scan.nextDouble();
     }
-    private static void enterOperator(){
-      operation = op.next();
+    private void enterOperator(){
+      operation = scan.next();
     }
-    private static void enterDoubleAgain(){
+    private void enterDoubleAgain(){
       num2 = scan.nextDouble();
     }
 
-    private static void printResult(){
+    private void printResult(){
       System.out.println("Your answer is: " + answer);
     }
     private static void printInstructions(){
