@@ -4,8 +4,10 @@ public class MyCalculator {
 
   public static void main(String[] args) {
 
-    double num1, num2;
-    String operation;
+    private static double num1 = 0;
+    private static double num2 = 0;
+    private static double answer = 0;
+    private static String operator = "-1";
 
     Scanner input = new Scanner(System.in);
 
