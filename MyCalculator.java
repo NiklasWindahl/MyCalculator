@@ -8,34 +8,41 @@ public class MyCalculator {
   private String operation = "-1";
 
   Scanner op = new Scanner (System.in);
-  Scanner scan = new Scanner(System.in);
+  Scanner input = new Scanner(System.in);
 
 
   private  void printInstructions(){
-try{
+    try{
       System.out.println("Hello, welcome to MasterGitCalculator");
-      System.out.println("please choose number, operator, number");
+      System.out.print("Enter first number: ");
+      num1 = input.nextDouble();
 
-      num1 = scan.nextDouble();
+      System.out.print("Enter second number: ");
+      num2 = input.nextDouble();
+
+      Scanner op = new Scanner(System.in);
+
+      System.out.print("Välj: +  -  *  / ");
       operation = op.next();
-      num2 = scan.nextDouble();
 
-      if (operation == "+");
-      {
-          System.out.println("Answer is" + (num1 + num2));
-      }
-      if  (operation == "-");
-      {
-          System.out.println("Answer is" + (num1 - num2));
-      }
-      if(operation == "/");
-      {
-          System.out.println("Answer is" + (num1 / num2));
-      }
-      if (operation == "*")
-      {
-          System.out.println("Answer is" + (num1 * num2));
-      }
+      if (operation.equals("+"))
+         {
+             System.out.println("Your Answer is "+(num1 + num2));
+         }
+         else if (operation.equals("-"))
+         {
+             System.out.println("Your Answer is "+(num1 - num2));
+         }
+         else if (operation.equals("*"))
+         {
+             System.out.println("Your Answer is "+(num1 * num2));
+         }
+         else if (operation.equals("/"))
+         {
+             System.out.println("Your Answer is "+(num1 / num2));
+         }
+
+
 
  }
 
