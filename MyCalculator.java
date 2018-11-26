@@ -50,6 +50,10 @@ catch (Exception e){
   System.out.println("Error has occured, you messed up!");}
 
 
+  }
+  public double getFirstNumber(){
+    return num1;
+
 }
 public static void main(String[] args) {
 
