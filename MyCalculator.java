@@ -11,6 +11,7 @@ public class MyCalculator {
   Scanner input = new Scanner(System.in);
 
 
+
   private  void printInstructions(){
     try{
       System.out.println("Hello, welcome to MasterGitCalculator");
